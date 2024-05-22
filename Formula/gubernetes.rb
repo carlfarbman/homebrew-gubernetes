@@ -6,6 +6,7 @@ class Gubernetes < Formula
 
   def install
     bin.install "gubernetes"
+    bin.install_symlink bin/"gubernetes" => "g8s"
   end
 
   test do
